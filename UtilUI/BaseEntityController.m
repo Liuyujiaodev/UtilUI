@@ -8,8 +8,6 @@
 
 #import "BaseEntityController.h"
 
-#import "MJRefresh.h"
-
 @interface BaseEntityController ()
 
 

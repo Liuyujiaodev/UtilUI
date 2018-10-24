@@ -7,10 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Common.h"
-#import "CommonCategory.h"
-#import "Normal.h"
-#import "Util.h"
 
 @interface BaseController : UIViewController
 
