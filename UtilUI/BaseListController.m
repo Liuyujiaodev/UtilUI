@@ -9,6 +9,7 @@
 #import "BaseListController.h"
 #import "BaseCell.h"
 #import <objc/runtime.h>
+#import "MJRefresh.h"
 
 #define kCELL_BGCOLOR                  RGBColor(246, 246, 246)
 

@@ -7,7 +7,8 @@
 //
 
 #import "YLNavController.h"
-
+#import "CommonCategory.h"
+#import "Common.h"
 @interface YLNavController ()
 
 @property (nonatomic, strong) UIImageView *barImageView;

@@ -8,6 +8,7 @@
 
 #import "YLTabController.h"
 #import "YLNavController.h"
+#import "Common.h"
 
 @interface YLTabController () <YLTabBarDelegate>
 {

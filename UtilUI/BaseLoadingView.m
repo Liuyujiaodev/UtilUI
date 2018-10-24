@@ -7,6 +7,7 @@
 //
 
 #import "BaseLoadingView.h"
+#import "Common.h"
 
 #define WIDTH           90
 #define HEIGHT          80

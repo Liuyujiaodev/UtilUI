@@ -7,7 +7,10 @@
 //
 
 #import "YMWebController.h"
-
+#import "Common.h"
+#import "CommonCategory.h"
+#import "Normal.h"
+#import "Util.h"
 
 //#import "WebViewJavascriptBridge.h"
 
