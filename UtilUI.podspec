@@ -21,9 +21,6 @@ s.description = %{
 }
 s.source_files = "UtilUI/**/*.{h,m}"
 s.frameworks = 'Foundation', 'UIKit','AdSupport','CoreTelephony','CoreLocation','Contacts','AddressBook'
-s.static_framework = true
-s.vendored_frameworks = 'UMMobClick.framework'
-
 
 
 s.dependency "Reachability"

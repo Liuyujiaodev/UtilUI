@@ -1,7 +1,6 @@
 PODS:
   - MJRefresh (3.1.15.7)
   - Reachability (3.2)
-  - UMengAnalytics-NO-IDFA (4.2.5)
   - UtilStr (1.0.0):
     - YJUtil
   - YJBase64 (1.0.1)
@@ -14,7 +13,6 @@ PODS:
 DEPENDENCIES:
   - MJRefresh
   - Reachability
-  - UMengAnalytics-NO-IDFA
   - UtilStr
   - YJBase64 (~> 1.0.1)
   - YJCategory
@@ -23,12 +21,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   UtilStr: 078adf38133de322a6437973e4ea8f90c3f3ded8
   YJBase64: 867bdea21f098a39fc1492833db871d784149afc
   YJCategory: d58f2c4db734dc9f90478543e90813b2638dd50a
   YJUtil: d71fb13ae72e5286a239225883f9f84fbe11a06f
 
-PODFILE CHECKSUM: bab9f4b21ebbc5fc1280e3a9e9dd14e45bcb162d
+PODFILE CHECKSUM: f44554b5c6aeaea46581718aaff72acca9e5c0fc
 
 COCOAPODS: 1.4.0.rc.1
