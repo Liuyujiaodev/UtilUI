@@ -9,7 +9,6 @@
 #import "BaseController.h"
 #import <objc/runtime.h>
 #import "YLTabBar.h"
-#import "UMMobClick/MobClick.h"
 
 @interface BaseController ()
 @property (nonatomic, assign) BOOL isAlertShwo;
@@ -52,7 +51,7 @@
                                                                   length:strlen(className)
                                                                 encoding:NSASCIIStringEncoding
                                                             freeWhenDone:NO];
-    [MobClick beginLogPageView:viewControllerName];
+//    [MobClick beginLogPageView:viewControllerName];
     
     // 当视图作为tab主页时，需要显示tabBar
     if (self.navigationController.viewControllers.count == 1) {
@@ -96,7 +95,7 @@
                                                                   length:strlen(className)
                                                                 encoding:NSASCIIStringEncoding
                                                             freeWhenDone:NO];
-    [MobClick endLogPageView:viewControllerName];
+//    [MobClick endLogPageView:viewControllerName];
 }
 - (void)setTitle:(NSString*)title isRoot:(BOOL)isRoot {
     [self setTitle:title isRoot:isRoot rightBtn:@""];

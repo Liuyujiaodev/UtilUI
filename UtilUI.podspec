@@ -21,6 +21,10 @@ s.description = %{
 }
 s.source_files = "UtilUI/**/*.{h,m}"
 s.frameworks = 'Foundation', 'UIKit','AdSupport','CoreTelephony','CoreLocation','Contacts','AddressBook'
+s.static_framework = true
+s.vendored_frameworks = 'UMMobClick.framework'
+
+
 
 s.dependency "Reachability"
 s.dependency "YJBase64"
@@ -28,7 +32,6 @@ s.dependency "YJCategory"
 s.dependency "YJUtil"
 s.dependency "UtilStr"
 s.dependency "MJRefresh"
-s.dependency "UMengAnalytics-NO-IDFA"
 s.requires_arc = true
 s.platform = :ios, '8.0'
 end

@@ -8,6 +8,5 @@ target :UtilUIExample do
     pod 'YJUtil'
     pod 'UtilStr'
     pod 'MJRefresh'
-    pod 'UMengAnalytics-NO-IDFA'
 
 end
