@@ -1,0 +1,13 @@
+platform:ios, ‘9.0’
+inhibit_all_warnings!
+
+target :UtilUIExample do
+    pod 'YJBase64', '~>1.0.1'
+    pod 'Reachability'
+    pod 'YJCategory'
+    pod 'YJUtil'
+    pod 'UtilStr'
+    pod 'MJRefresh'
+    pod 'UMengAnalytics-NO-IDFA'
+
+end
