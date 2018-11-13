@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name     = "UtilUI"
-s.version  = "1.0.6"
+s.version  = "1.0.7"
 s.license  = "MIT"
 s.summary  = "iOS工具类"
 s.homepage = "https://github.com/Liuyujiaodev/UtilUI.git"

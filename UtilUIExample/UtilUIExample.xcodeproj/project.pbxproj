@@ -96,8 +96,6 @@
 		0971DD31219ABA20001981F3 /* UtilUI */ = {
 			isa = PBXGroup;
 			children = (
-				0971DD32219ABA20001981F3 /* MainController */,
-				0971DD37219ABA20001981F3 /* BaseView */,
 				0971DD46219ABA20001981F3 /* BaseController */,
 				0971DD4F219ABA20001981F3 /* UtilUI.h */,
 			);
@@ -105,20 +103,21 @@
 			path = ../../UtilUI;
 			sourceTree = "<group>";
 		};
-		0971DD32219ABA20001981F3 /* MainController */ = {
+		0971DD46219ABA20001981F3 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				0971DD4C219ABA20001981F3 /* BaseController.h */,
+				0971DD47219ABA20001981F3 /* BaseController.m */,
+				0971DD49219ABA20001981F3 /* YMWebController.h */,
+				0971DD4D219ABA20001981F3 /* YMWebController.m */,
+				0971DD4E219ABA20001981F3 /* BaseListController.h */,
+				0971DD4A219ABA20001981F3 /* BaseListController.m */,
+				0971DD4B219ABA20001981F3 /* BaseEntityController.h */,
+				0971DD48219ABA20001981F3 /* BaseEntityController.m */,
 				0971DD35219ABA20001981F3 /* YLNavController.h */,
 				0971DD33219ABA20001981F3 /* YLNavController.m */,
 				0971DD36219ABA20001981F3 /* YLTabController.h */,
 				0971DD34219ABA20001981F3 /* YLTabController.m */,
-			);
-			path = MainController;
-			sourceTree = "<group>";
-		};
-		0971DD37219ABA20001981F3 /* BaseView */ = {
-			isa = PBXGroup;
-			children = (
 				0971DD41219ABA20001981F3 /* BaseCell.h */,
 				0971DD38219ABA20001981F3 /* BaseCell.m */,
 				0971DD39219ABA20001981F3 /* BaseLoadingView.h */,
@@ -133,21 +132,6 @@
 				0971DD43219ABA20001981F3 /* YLTabBar.m */,
 				0971DD45219ABA20001981F3 /* YLTabBarButton.h */,
 				0971DD3D219ABA20001981F3 /* YLTabBarButton.m */,
-			);
-			path = BaseView;
-			sourceTree = "<group>";
-		};
-		0971DD46219ABA20001981F3 /* BaseController */ = {
-			isa = PBXGroup;
-			children = (
-				0971DD4C219ABA20001981F3 /* BaseController.h */,
-				0971DD47219ABA20001981F3 /* BaseController.m */,
-				0971DD49219ABA20001981F3 /* YMWebController.h */,
-				0971DD4D219ABA20001981F3 /* YMWebController.m */,
-				0971DD4E219ABA20001981F3 /* BaseListController.h */,
-				0971DD4A219ABA20001981F3 /* BaseListController.m */,
-				0971DD4B219ABA20001981F3 /* BaseEntityController.h */,
-				0971DD48219ABA20001981F3 /* BaseEntityController.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";

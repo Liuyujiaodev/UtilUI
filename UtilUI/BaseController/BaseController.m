@@ -8,7 +8,7 @@
 
 #import "BaseController.h"
 #import <objc/runtime.h>
-//#import "YLTabBar.h"
+#import "YLTabBar.h"
 
 @interface BaseController ()
 @property (nonatomic, assign) BOOL isAlertShwo;
@@ -57,14 +57,14 @@
     if (self.navigationController.viewControllers.count == 1) {
         [self.navigationController.tabBarController.tabBar setHidden:NO];
         
-//        // 删除系统自带的tab
-//        UITabBar *tabBar = self.navigationController.tabBarController.tabBar;
-//        for (UIView *subView in tabBar.subviews) {
-//            if (![subView isKindOfClass:[YLTabBar class]]) {
-//                subView.hidden = YES;
-//                [subView removeFromSuperview];
-//            }
-//        }
+        // 删除系统自带的tab
+        UITabBar *tabBar = self.navigationController.tabBarController.tabBar;
+        for (UIView *subView in tabBar.subviews) {
+            if (![subView isKindOfClass:[YLTabBar class]]) {
+                subView.hidden = YES;
+                [subView removeFromSuperview];
+            }
+        }
     } else {
         [self.navigationController.tabBarController.tabBar setHidden:YES];
     }
@@ -78,14 +78,14 @@
     [super viewWillLayoutSubviews];
     UITabBar *tabBar = self.navigationController.tabBarController.tabBar;
 
-//    for (UIView * view in tabBar.subviews)
-//    {
-//        
-//        if (![view isKindOfClass:[YLTabBar class]]) {
-//            
-//            [view removeFromSuperview];
-//        }
-//    }
+    for (UIView * view in tabBar.subviews)
+    {
+        
+        if (![view isKindOfClass:[YLTabBar class]]) {
+            
+            [view removeFromSuperview];
+        }
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
