@@ -10,4 +10,7 @@
 
 @interface YLTextField : UITextField
 
+@property (nonatomic, assign) NSInteger placeHoderSpace;
+@property (nonatomic, assign) NSInteger textSpace;
+
 @end

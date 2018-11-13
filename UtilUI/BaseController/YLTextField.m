@@ -21,6 +21,18 @@
     return self;
 }
 
+-(CGRect)placeholderRectForBounds:(CGRect)bounds {
+    
+    return CGRectMake(self.placeHoderSpace, 0, bounds.size.width - 26, bounds.size.height);
+}
+
+- (CGRect)textRectForBounds:(CGRect)bounds {
+    return CGRectMake(self.textSpace, 0, bounds.size.width - 26, bounds.size.height);
+}
+
+- (CGRect)editingRectForBounds:(CGRect)bounds {
+    return CGRectMake(self.textSpace, 0, bounds.size.width - 26, bounds.size.height);
+}
 
 
 
