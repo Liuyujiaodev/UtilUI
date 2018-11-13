@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name     = "UtilUI"
-s.version  = "1.0.8"
+s.version  = "1.0.9"
 s.license  = "MIT"
 s.summary  = "iOS工具类"
 s.homepage = "https://github.com/Liuyujiaodev/UtilUI.git"
@@ -25,7 +25,7 @@ s.frameworks = 'Foundation', 'UIKit','AdSupport','CoreTelephony','CoreLocation',
 
 s.dependency "Reachability"
 s.dependency "YJBase64"
-s.dependency "YJCategory"
+s.dependency "YJCategory",'~>1.2.2'
 s.dependency "YJUtil"
 s.dependency "UtilStr"
 s.dependency "MJRefresh"
