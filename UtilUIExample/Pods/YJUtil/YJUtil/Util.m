@@ -8,6 +8,7 @@
 
 #define APPWidth [UIScreen mainScreen].bounds.size.width
 #define APPHeight [UIScreen mainScreen].bounds.size.height
+#define Bundle_Identifier   [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]
 
 #import "Util.h"
 #import "Reachability.h"
@@ -886,5 +887,22 @@ NSString* getArchivePathForId(NSString* modelId) {
     } else {
         return NO;
     }
+}
+
++ (NSString*)getUrlSchemes {
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    
+    NSDictionary *bundleUrltypes = [infoDic objectForKey:@"CFBundleURLTypes"];
+    NSString* urlSchemes;
+    for (NSDictionary* types in bundleUrltypes) {
+        if ([[types objectForKey:@"CFBundleURLName"] isEqualToString:Bundle_Identifier]) {
+            NSArray* allUrlSchemes = (NSArray*)[types objectForKey:@"CFBundleURLSchemes"];
+            if (allUrlSchemes.count > 0) {
+                urlSchemes = [allUrlSchemes objectAtIndex:0];
+                return urlSchemes;
+            }
+        }
+    }
+    return nil;
 }
 @end

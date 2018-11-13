@@ -7,7 +7,6 @@
 //  
 
 #import <UIKit/UIKit.h>
-#import "YLTabBar.h"
 
 @interface YLTabController : UITabBarController
 
