@@ -187,10 +187,7 @@
             [self.bar addSubview:closeButton];
         }
     } else {
-        
-        [self.webView stopLoading];
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
-        [self.navigationController popViewControllerAnimated:YES];
+        [self closeButtonAction];
     }
 }
 
@@ -198,7 +195,11 @@
 
     [self.webView stopLoading];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
-    [self.navigationController popViewControllerAnimated:YES];
+    if (self.toRootVC) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)shareAction {

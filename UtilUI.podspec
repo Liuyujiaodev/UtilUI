@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name     = "UtilUI"
-s.version  = "1.0.2"
+s.version  = "1.0.4"
 s.license  = "MIT"
 s.summary  = "iOS工具类"
 s.homepage = "https://github.com/Liuyujiaodev/UtilUI.git"
@@ -19,7 +19,7 @@ s.source       = { :git => "https://github.com/Liuyujiaodev/UtilUI.git", :tag =>
 s.description = %{
 。
 }
-s.source_files = "UtilUI/**/*.{h,m}"
+s.source_files = "UtilUI/**/*.{h,m},","UtilUI/BaseController/*.{h,m}","UtilUI/BaseView/{h,m}","UtilUI/MainController/{h,m}"
 s.frameworks = 'Foundation', 'UIKit','AdSupport','CoreTelephony','CoreLocation','Contacts','AddressBook'
 
 

@@ -26,6 +26,7 @@
 //服务协议签署
 @property (nonatomic, copy) NSString* agreement_id;
 @property (nonatomic, assign) BOOL isDismiss;
+@property (nonatomic, assign) BOOL toRootVC;
 
 //如果isLogin为yes，则是从登陆页面过来的，返回的时候要把suid清掉，否则点击拨打客服电话，可能会弹同意服务协议页面
 @property (nonatomic, assign) BOOL isLogin;
