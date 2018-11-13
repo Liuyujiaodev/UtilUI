@@ -9,6 +9,7 @@
 #import "BaseEntityController.h"
 #import "CommonCategory.h"
 #import "MJRefresh.h"
+#import "Common.h"
 
 @interface BaseEntityController ()
 

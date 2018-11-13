@@ -10,6 +10,10 @@
 #import "BaseCell.h"
 #import <objc/runtime.h>
 #import "MJRefresh.h"
+#import "Common.h"
+#import "CommonCategory.h"
+#import "Util.h"
+#import "Normal.h"
 
 #define kCELL_BGCOLOR                  RGBColor(246, 246, 246)
 
